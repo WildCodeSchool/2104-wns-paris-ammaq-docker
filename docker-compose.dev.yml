@@ -1,0 +1,17 @@
+services:
+    front:
+        container_name: workit-front
+        build: ./2104-wns-paris-ammaq-front
+        volumes:
+          - ./2104-wns-paris-ammaq-front/src/:/app/src
+          - /app/node_modules
+        ports:
+          - 8080:3000
+    back:
+        container_name: workit-brack
+        build: ./2104-wns-paris-ammaq-back
+        ports:
+            - 4000:4000
+        command: npm run dev
+        volumes:
+            - ./2104-wns-paris-ammaq-back/src/:/app/src/

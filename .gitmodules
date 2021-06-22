@@ -1,0 +1,8 @@
+[submodule "2104-wns-paris-ammaq-back"]
+	path = 2104-wns-paris-ammaq-back
+	url = https://github.com/WildCodeSchool/2104-wns-paris-ammaq-back
+	branch = main
+[submodule "2104-wns-paris-ammaq-front"]
+	path = 2104-wns-paris-ammaq-front
+	url = https://github.com/WildCodeSchool/2104-wns-paris-ammaq-front
+	branch = main
