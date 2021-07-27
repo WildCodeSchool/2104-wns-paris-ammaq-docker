@@ -4,7 +4,6 @@ services:
         build: ./2104-wns-paris-ammaq-front
         volumes:
           - ./2104-wns-paris-ammaq-front/src/:/app/src
-          - /app/node_modules
         ports:
           - 8080:3000
     back:
