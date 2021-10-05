@@ -7,7 +7,7 @@ services:
         ports:
           - 8080:3000
     back:
-        container_name: workit-brack
+        container_name: workit-back
         build: ./2104-wns-paris-ammaq-back
         ports:
             - 4000:4000
