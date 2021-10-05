@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  back:
+  server:
     container_name: workit-back
     build: ./2104-wns-paris-ammaq-back
     command: sh -c "npm run build && npm run prod"
@@ -12,7 +12,7 @@ services:
     environment:
       - NODE_ENV=production
       - SERVER_PORT=5000
-  front:
+  client:
     container_name: workit-front
     build: ./2104-wns-paris-ammaq-front
     command: sh -c "npm run build"
