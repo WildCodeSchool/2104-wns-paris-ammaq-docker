@@ -5,8 +5,6 @@ services:
     container_name: workit-back
     build: ./2104-wns-paris-ammaq-back
     command: sh -c "npm run build && npm run prod"
-    expose:
-      - 5000
     env_file:
       - ./2104-wns-paris-ammaq-back/.env
     environment:
