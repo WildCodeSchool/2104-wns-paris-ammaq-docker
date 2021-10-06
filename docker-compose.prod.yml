@@ -2,7 +2,6 @@ version: '3'
 
 services:
   server:
-    container_name: workit-back
     build: ./2104-wns-paris-ammaq-back
     command: sh -c "npm run build && npm run prod"
     expose:
@@ -13,7 +12,6 @@ services:
       - NODE_ENV=production
       - SERVER_PORT=5000
   client:
-    container_name: workit-front
     build: ./2104-wns-paris-ammaq-front
     command: sh -c "npm run build"
     volumes:
