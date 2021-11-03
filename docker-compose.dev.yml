@@ -13,4 +13,4 @@ services:
             - 4000:4000
         command: npm run dev
         volumes:
-            - ./2104-wns-paris-ammaq-back/src/:/app/src/
+            - ./2104-wns-paris-ammaq-back/src/:/app/src
